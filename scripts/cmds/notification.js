@@ -30,11 +30,11 @@ module.exports = {
 			errorSendingNotification: "Có lỗi xảy ra khi gửi đến %1 nhóm:\n%2"
 		},
 		en: {
-			missingMessage: "Please enter the message you want to send to all groups",
-			notification: "Notification from admin bot to all chat groups (do not reply to this message)",
-			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
-			sentNotification: "✅ Sent notification to %1 groups successfully",
-			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
+			missingMessage: "𝘀'𝗶𝗹 𝘁𝗲 𝗽𝗹𝗮𝗶𝘁 𝗺𝗮𝗶́𝘁𝗿𝗲 🌹𝗥𝗼𝗻𝗮𝗹𝗱🌹 𝗲𝗻𝘁𝗿𝗲 𝘂𝗻 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗽𝗼𝘂𝗿 𝗾𝘂𝗲 𝗹𝗲 𝗰𝗼𝗿𝗯𝗲𝗮𝘂 𝗽𝘂𝗶𝘀𝘀𝗲 𝗹𝗲 𝘁𝗿𝗮𝗻𝘀𝗳𝗲́𝗿𝗲́ 𝗱𝗮𝗻𝘀 %1 𝗴𝗿𝗼𝘂𝗽𝗲𝘀",
+			notification: "𝗨𝗻 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗽𝗿𝗼𝘃𝗲𝗻𝗮𝗻𝘁 𝗱𝗲 𝗹𝗮 𝗽𝗮𝗿𝘁 𝗱𝘂 𝗣𝗿𝗶𝗻𝗰𝗲 🌹 𝗥𝗢𝗡𝗔𝗟𝗗 🌹",
+			sendingNotification: "𝘂𝗻 𝗰𝗼𝗿𝗯𝗲𝗮𝘂🦅 𝗮𝘃𝗲𝗰 𝗱𝗲𝘀 𝘁𝘂𝗿𝗯𝗼𝗿𝗲́𝗮𝗰𝘁𝗲𝘂𝗿 𝗲𝘀𝘁 𝗲𝗻 𝘁𝗿𝗮𝗶𝗻 𝗱'𝗲𝗻𝘃𝗼𝘆𝗲𝗿 𝘁𝗼𝗻 𝗿𝗼𝘂𝗹𝗲𝗮𝘂 𝗱𝗮𝗻𝘀 %1 𝗴𝗿𝗼𝘂𝗽𝗲𝘀",
+			sentNotification: "✅ 𝗟𝗲 𝗿𝗼𝘂𝗹𝗲𝗮𝘂 𝗮 𝗲́𝘁𝗲́ 𝗲𝗻𝘃𝗼𝘆𝗲́ 𝗱𝗮𝗻𝘀【%1】𝗴𝗿𝗼𝘂𝗽𝗲𝘀 ",
+			errorSendingNotification: "𝗷𝗲 𝗻'𝗮𝗶 𝗽𝗮𝘀 𝗽𝘂 𝗲𝗻𝘃𝗼𝘆𝗲́ 𝘃𝗼𝘁𝗿𝗲 𝗿𝗼𝘂𝗹𝗲𝗮𝘂 𝗱𝗮𝗻𝘀 %1 𝗮̊ 𝗰𝗮𝘂𝘀𝗲 𝗱'𝘂𝗻 𝘀𝗰𝗲𝗮𝘂 🤧:\n%2"
 		}
 	},
 
@@ -43,7 +43,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply(getLang("missingMessage"));
 		const formSend = {
-			body: `${getLang("notification")}\n────────────────\n${args.join(" ")}`,
+			body: `${getLang("notification")}\n══════════════════\n${args.join(" ")}`,
 			attachment: await getStreamsFromAttachment(
 				[
 					...event.attachments,
