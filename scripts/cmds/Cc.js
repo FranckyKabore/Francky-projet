@@ -15,6 +15,4 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "cc") return message.reply("💬cc 😃 Moi c'est 🌹 𝐑𝐎𝐍𝐀𝐋𝐃 🌹 utilise le commande •ronaldgc pour intégrer mon groupe  ❤️‍🔥📫");
-}
-};
+    if (event.body && event.body.toLowerCase() == "cc") return message.reply("💬cc 😃 Moi c'est Itachi Uchiwa je reponds à toutes les questions"
