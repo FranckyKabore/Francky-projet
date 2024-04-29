@@ -31,7 +31,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("🌹 𝐑𝐨𝐧𝐚𝐥𝐝 𝐁𝐨𝐭 est toujours là pour répondre à vos questions 🌹📬");
+        await message.reply("François Kaboré m'a donner la charge de répondre à toutes vos questions");
         return;
       }
 
@@ -40,11 +40,11 @@ module.exports = {
       const answer = response.data.answer;
 
  
-    await message.reply({ body: `🌹𝐑𝐎𝐍𝐀𝐋𝐃🌹
-✰✰✰✰✰✰✰✰✰✰✰✰✰✰
+    await message.reply({ body: `François 😏
+✯✯✯✯✯✯✯✯✯✯✯✯✯✯
 ${answer}
-✰✰✰✰✰✰✰✰✰✰✰✰✰✰
-🌹𝐑𝐎𝐍𝐀𝐋𝐃🌹`,
+✯✯✯✯✯✯✯✯✯✯✯✯✯✯
+François😏`,
 });
 
    } catch (error) {
